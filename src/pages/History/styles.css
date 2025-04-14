@@ -1,0 +1,24 @@
+.history_container .infinite-scroll-component {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.history_container .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid var(--base-red);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: var(--base-red);
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .history_container .infinite-scroll-component {
+    grid-template-columns: 1fr;
+  }
+}

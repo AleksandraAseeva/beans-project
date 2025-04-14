@@ -1,0 +1,49 @@
+.home_container {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  gap: 0;
+}
+
+.home_container img:hover {
+  animation: favicon-shake 0.7s ease-in-out 2 alternate;
+}
+
+.info {
+  text-align: center;
+
+  & p {
+    color: var(--base-red);
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@keyframes favicon-shake {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .home_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .home_container {
+    grid-template-columns: 1fr;
+  }
+}

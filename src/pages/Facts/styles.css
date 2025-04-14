@@ -1,0 +1,12 @@
+.facts_container .infinite-scroll-component {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .facts_container .infinite-scroll-component {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,128 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  transition: border 0.3s;
+}
+
+.form_control span, .form_control textarea, .form_control input {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 360px) {
+  .form, .form_control span, .form_control textarea, .form_control input {
+    font-size: 1.2rem;
+  }
+}
+
+.form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: border 0.3s;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formControl {
+  padding: 1rem;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+}
+
+.textarea {
+  resize: none;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.radioInput {
+  display: none;
+}
+
+.submitButton {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #e83a4b;
+  color: white;
+  border: none;
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.errorText {
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 350px) {
+  .form {
+    padding: 0.5rem;
+  }
+
+  .input,
+  .textarea {
+    min-width: 200px;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .ratingContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .stars {
+    gap: 0.3rem;
+  }
+
+  .star {
+    size: 20px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .submitButton {
+    width: 80%;
+    font-size: 1rem;
+  }
+}

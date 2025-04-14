@@ -1,0 +1,41 @@
+.container {
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 1rem 0; */
+  padding: 1rem 4rem;
+  background-color: rgb(249, 245, 244);
+}
+
+.container img {
+  width: 80px;
+  object-fit: contain;
+}
+
+.container nav a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.container nav {
+  font-size: 18px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Lobster";
+  color: var(--base-red);
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .container img {
+    width: 60px;
+  }
+}
