@@ -117,7 +117,6 @@ export const AddReview = () => {
                     >
                       <FaStar
                         size={25}
-                        // className={style.star}
                         color={
                           currentRating <= (hover || rating || 0)
                             ? "#ffc107"

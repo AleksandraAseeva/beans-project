@@ -15,7 +15,6 @@ import { Reviews } from "./pages/Review";
 
 export const router = createBrowserRouter([
   {
-    // path: "/homevork-18",
     path: "/",
     element: <Layout />,
     loader: Loader,
@@ -51,8 +50,5 @@ export const router = createBrowserRouter([
 
     ],
   },
-],
-  {
-    basename: "/beans-project/",
-  }
+]
 );

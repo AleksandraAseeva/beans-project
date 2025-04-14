@@ -1,5 +1,3 @@
-// import React from "react";
-// import { MdModeEditOutline } from "react-icons/md";
 import { FaTrashAlt, FaStar } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { deleteReviews } from "../../../Redux/review/reviewSlice";

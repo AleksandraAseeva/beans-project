@@ -1,5 +1,3 @@
-// типы каждой части данных какого-то предмета
-
 export type Bean = {
   backgroundColor: string;
   beanId: number;

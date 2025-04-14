@@ -25,9 +25,9 @@ const reviewSlice = createSlice({
   initialState,
   reducers: {
     addReviews: (state, { payload }: { payload: ReviewInterface }) => {
-      const { id, user, text, rating } = payload; // здесь мы используем payload как ReviewInterface
+      const { id, user, text, rating } = payload; // payload как ReviewInterface
       state.reviews.push({ id, user, text, rating });
-    }, // Пока такое удаление
+    },
     deleteReviews: (state, { payload: { reviewId } }) => {
         state.reviews = state.reviews.filter((review) => review.id !== reviewId)
     }
@@ -35,5 +35,4 @@ const reviewSlice = createSlice({
 });
 
 export const {addReviews, deleteReviews} = reviewSlice.actions;
-// Экспортируем редюсер среза по умолчанию,
 export default reviewSlice.reducer;

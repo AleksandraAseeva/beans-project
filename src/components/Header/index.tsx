@@ -14,7 +14,6 @@ export const Header = () => {
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>
           <img src={logo} alt="logo" />
-          {/* <span>Jelly Belly</span> */}
         </Link>
         {isMobile ? <MobileMenu /> : <DesktopMenu />}
         {isMobile ? "" : <ApiButton/>}

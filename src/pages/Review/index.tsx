@@ -12,8 +12,7 @@ export interface TodoInterface {
 }
 
 export const Reviews = () => {
-// здесь мы переходим к состоянию todos и читаем его при каждом изменении
-  const review = useSelector((state: RootState) => state.review); // первый туду это редюсер из store.ts, второй это массив задач из todo.ts
+  const review = useSelector((state: RootState) => state.review);
 
 const AppWrapper = styled.div`
     display: flex;

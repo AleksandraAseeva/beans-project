@@ -65,12 +65,6 @@
   transform: scaleX(1);
 }
 
-/* .descriptiondata {
-  display: "flex"; 
-  flex-direction: "column";
-  max-width: "20%"
-  } */
-
 @media (max-width: 850px) {
   .container section {
     gap: 0;
